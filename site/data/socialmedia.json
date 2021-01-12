@@ -1,0 +1,12 @@
+{ "accounts" :
+  [
+    {
+      "name": "Instagram",
+      "url": "https://instagram.com/impresorloyola"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://facebook.com/impresorloyola"
+    }
+  ]
+}
