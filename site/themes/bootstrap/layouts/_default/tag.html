@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="shadow-none p-3 mb-5 bg-light rounded">
+<h2 class="text-center">
+    {{ .Title }}
+</h2>
+</div>
+
+{{ range (.Paginator 3).Pages }}
+{{ partial "post_summary.html" . }}
+{{ end }}
+
+{{ partial "pagination.html" . }}
+
+{{ end }}

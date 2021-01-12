@@ -1,0 +1,19 @@
+<article>
+   <div class="pb-5">
+    <header>
+        <h2 class="h2-font-size">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none text-dark">{{ .Title }}</a>
+        </h2>
+        <time>
+            {{ .Date | dateFormat "January" }}
+            {{ .Date | dateFormat "2" }}
+        </time>
+    </header>
+
+    {{ .Summary }}
+    <p class="text-end">
+        <a href="{{ .RelPermalink }}" class="text-decoration-none text-dark"><button type="button" class="btn btn-sm btn-outline-dark">Seguir leyendo</button></a>
+    </p>
+       <hr>
+   </div>
+</article>

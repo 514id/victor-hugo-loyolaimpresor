@@ -14,3 +14,13 @@ disableKinds = ["RSS"]
 [params]
 author = "Indihui Loyola"
 description = "Mi portafolio de impresor"
+
+[permalinks]
+posts = "posts/:year/:month/:slug"
+year = "/posts/:slug/"
+month = "/posts/:slug/"
+
+[taxonomies]
+year = "year"
+month = "month"
+tag = "tags"

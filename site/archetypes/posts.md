@@ -3,9 +3,8 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
 author: Indihui Loyola
-categories:
-- Personal
-- Trabajo
+year: "{{ dateFormat "2006" .Date }}"
+month: "{{ dateFormat "2006/01" .Date }}"
 tags:
 - diseño
 - estudio

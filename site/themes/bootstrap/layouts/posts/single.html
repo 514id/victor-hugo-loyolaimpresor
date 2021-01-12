@@ -8,5 +8,10 @@
     <section class="body">
         {{ .Content }}
     </section>
+    <span class="tags">
+        {{ range .Params.tags }}
+            <a class="tag" href="/tags/{{ . | urlize}}">#{{ . }}</a>
+        {{ end }}
+    </span>
 </article>
 {{ end }}
